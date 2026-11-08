@@ -1,14 +1,16 @@
 package tiposDeDados;
 
+import tiposEnumeradosEnum.CategoriaProduto;
+
 public class Produto {
     private int codigo;
     private String descricao;
     private double preco;
     private int quantidadeEmEstoque;
-    private String categoria;
+    private CategoriaProduto categoria;
 
     public Produto(int codigo, String descricao, double preco,
-                   int quantidadeEmEstoque, String categoria) {
+                   int quantidadeEmEstoque, CategoriaProduto categoria) {
         this.codigo = codigo;
         this.descricao = descricao;
         this.preco = preco;
@@ -63,11 +65,11 @@ public class Produto {
         this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
 
-    public String getCategoria() {
+    public CategoriaProduto getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(CategoriaProduto categoria) {
         this.categoria = categoria;
     }
 }
